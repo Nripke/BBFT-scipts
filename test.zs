@@ -10,7 +10,7 @@ var andesite = <item:minecraft:andesite>;
 
 // SandPaperPolishingManager.addRecipe(name as string, output as Percentaged<IItemStack>, input as IIngredient, duration as int) as void
 
-<recipetype:create:sandpaper_polishing>.addRecipe("Polish Cobble", cobble % 100, andesite, 200);
+<recipetype:create:sandpaper_polishing>.addRecipe("polish.cobble", andesite % 100, cobble, 200);
 
 craftingTable.addShaped("coalcompression", diamond, [
     [coal, coal, coal], 
@@ -41,11 +41,4 @@ craftingTable.addShaped("createroot", <item:storagenetwork:master>, [
     [diamond, cable, diamond],
     [cable, etube, cable],
     [diamond, cable, diamond]
-]);
-
-var oreStone = <ore:forge:stone>;
-craftingTable.addShaped("accessablefurnace", <item:minecraft:furnace>, [
-    [oreStone, oreStone, oreStone],
-    [oreStone, empty, oreStone],
-    [oreStone, oreStone, oreStone]
 ]);
